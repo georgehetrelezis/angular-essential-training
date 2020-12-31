@@ -4,7 +4,7 @@
 }
 nav {
   width: 68px;
-  background-color: #53ace4;
+  background-color: #646464;
 }
 nav .icon {
   width: 48px;
@@ -13,10 +13,10 @@ nav .icon {
 }
 section {
   width: 100%;
-  background-color: #32435b;
+  background-color: #a9d8ff;
 }
 section > header {
-  color: #ffffff;
+  color: #646464;
   padding: 10px;
 }
 section > header > h1 {

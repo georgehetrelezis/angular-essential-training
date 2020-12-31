@@ -1,5 +1,5 @@
 <header
-    [ngClass]="{'medium-movies':medium === 'Movies', 'medium-series':medium === 'Series'}">
+    [ngClass]="{'medium-Future':medium === 'Future', 'medium-past':medium === 'Past'}">
     <h2>{{medium}}</h2>
     <mw-category-list 
       *ngIf="mediaItems"
@@ -8,13 +8,13 @@
 </header>
 <section>
   <mw-media-item
-    [ngClass]="{'medium-movies': mediaItem.medium==='Movies', 'medium-series':mediaItem.medium==='Series'}"
+    [ngClass]="{'medium-Future': mediaItem.medium==='Future', 'medium-past':mediaItem.medium==='Past'}"
     *ngFor="let mediaItem of mediaItems"
     [mediaItem]="mediaItem"
     (delete)="onMediaItemDelete($event)"></mw-media-item>
 </section>
 <footer>
   <a routerLink="/add">
-    <img src="assets/01.png" class="icon">
+    <img src="assets/iconPlus.png" class="icon">
   </a>
 </footer>

@@ -5,46 +5,40 @@ export class MockXHRBackend implements HttpBackend {
   private mediaItems = [
     {
       id: 1,
-      name: 'Firebug',
-      medium: 'Series',
-      category: 'Science Fiction',
-      year: 2010,
-      watchedOn: 1294166565384,
-      isFavorite: false
+      name: 'Vietnam',
+      visited: false,
+      category: 'Asia',
+      isFavorite: true,
+      //image: "https://www.state.gov/wp-content/uploads/2019/04/Vietnam-2522x1406.jpg"
     },
     {
       id: 2,
-      name: 'The Small Tall',
-      medium: 'Movies',
-      category: 'Comedy',
-      year: 2015,
-      watchedOn: null,
-      isFavorite: true
+      name: 'Canada',
+      visited: false,
+      category: 'North America',
+      isFavorite: false
     }, {
       id: 3,
-      name: 'The Redemption',
-      medium: 'Movies',
-      category: 'Action',
-      year: 2016,
-      watchedOn: null,
+      name: 'England',
+      category: 'Europe',
+      visited: false,
       isFavorite: false
     }, {
       id: 4,
-      name: 'Hoopers',
-      medium: 'Series',
-      category: 'Drama',
-      year: null,
-      watchedOn: null,
+      name: 'Greece',
+      medium: 'Yes',
+      category: 'Europe',
+      watchedOn: 1564650000000,
       isFavorite: true
-    }, {
-      id: 5,
-      name: 'Happy Joe: Cheery Road',
-      medium: 'Movies',
-      category: 'Action',
-      year: 2015,
-      watchedOn: 1457166565384,
-      isFavorite: false
-    }
+     }//, {
+    //   id: 5,
+    //   name: 'Happy Joe: Cheery Road',
+    //   medium: 'Movies',
+    //   category: 'Action',
+    //   year: 2015,
+    //   watchedOn: 1457166565384,
+    //   isFavorite: false
+    // }
   ];
 
   handle(request: HttpRequest<any>): Observable<HttpEvent<any>> {

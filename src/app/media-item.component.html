@@ -1,7 +1,8 @@
 <h2>{{ mediaItem.name }}</h2>
 <ng-template [ngIf]="mediaItem.watchedOn">
-  <div>Watched on {{ mediaItem.watchedOn | date: 'shortDate' }}</div>
+  <div>Visited on {{ mediaItem.watchedOn | date: 'shortDate' }}</div>
 </ng-template>
+<div>{{ mediaItem.image}}</div>
 <div>{{ mediaItem.category }}</div>
 <div>{{ mediaItem.year }}</div>
 <div class="tools">
@@ -14,7 +15,7 @@
   <a class="delete" (click)="onDelete()">
     remove
   </a>
-  <a class="details">
+  <!--<a class="details">
     watch
-  </a>
+  </a>-->
 </div>

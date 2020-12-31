@@ -54,4 +54,5 @@ export interface MediaItem {
   year: number;
   watchedOn: number;
   isFavorite: boolean;
+  //image: HTMLImageElement;
 }
